@@ -1,0 +1,12 @@
+﻿services:
+  baseproject:
+    image: baseproject
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  baseproject.api:
+    image: baseproject.api
+    build:
+      context: .
+      dockerfile: BaseProject.API/Dockerfile
